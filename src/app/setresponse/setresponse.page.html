@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Set Response</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card class="glowing-border">
+
+    <ion-item class="glowing-border">
+      <ion-label>Select Number</ion-label>
+      <ion-select [interfaceOptions]="customAlertOptions" interface="alert" multiple="true" placeholder="Select One"
+        [(ngModel)]="selectContacts">
+        <ion-select-option *ngFor="let contact of contactList" value="{{contact.number}}"
+          (ionSelect)="ionSelectContact(contact.number, contact.name)">{{contact.name}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <div style="height: 5px;"></div>
+
+    <ion-item class="glowing-border">
+      <ion-label position="stacked">Set Response</ion-label>
+      <ion-textarea [(ngModel)]="myresponse" placeholder="Type Response"
+        style="height: 150px;border: 1px solid rgba(124, 123, 123, 0.486);"></ion-textarea>
+    </ion-item>
+
+    <div style="height: 5px;"></div>
+
+    <ion-item class="glowing-border">
+      <ion-label>Start Time</ion-label>
+      <ion-datetime [(ngModel)]="starttime" displayFormat="HH:mm" placeholder="HH:mm"></ion-datetime>
+    </ion-item>
+    <div style="height: 5px;"></div>
+    <ion-item class="glowing-border">
+      <ion-label>End Time</ion-label>
+      <ion-datetime [(ngModel)]="endtime" displayFormat="HH:mm" placeholder="HH:mm"></ion-datetime>
+    </ion-item>
+    <div style="height: 5px;"></div>
+    <ion-item class="glowing-border">
+      <ion-label>Date</ion-label>
+      <ion-datetime [(ngModel)]="date" display-format="MM/DD/YYYY" placeholder="MM/DD/YYYY"></ion-datetime>
+    </ion-item>
+    <div style="height: 5px;"></div>
+
+    <ion-button icon-left expand="full" color="success" clear (click)="sendTextMessage()">
+      <ion-icon name="checkmark"></ion-icon>
+      Set Response
+    </ion-button>
+
+
+  </ion-card>
+
+
+
+
+</ion-content>

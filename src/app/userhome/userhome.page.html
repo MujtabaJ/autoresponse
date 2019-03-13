@@ -1,0 +1,196 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-buttons left slot="start">
+      <ion-button>
+        <ion-menu-button></ion-menu-button>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+    <ion-buttons slot="end">
+      <ion-button routerLink="/setresponse">
+        <ion-icon name="add-circle" style="font-size: 20px;"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="mail" style="font-size: 20px;"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding color="dark">
+
+  <ion-grid>
+    <ion-row>
+      <!-- <ion-col col>
+        <ion-button block text-center color="danger" expand="full" fill="clear" class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Sport</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col> -->
+      <ion-col col>
+        <ion-button routerLink="/sleep" block text-center color="danger" expand="full" fill="clear"
+          class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <!-- <img src="assets/icon/favicon.png" style="width: auto;height: 30px;" /> -->
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Sleep</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <!-- <ion-col col>
+        <ion-button block text-center color="danger" expand="full" fill="clear" class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Transport</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col> -->
+      <ion-col col>
+        <ion-button routerLink="/eat" block text-center color="danger" expand="full" fill="clear" class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Eat</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col>
+        <ion-button routerLink="/read" block text-center color="danger" expand="full" fill="clear"
+          class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Read</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col col>
+        <ion-button routerLink="/work" block text-center color="danger" expand="full" fill="clear"
+          class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Work</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <!-- <ion-col col>
+        <ion-button block text-center color="danger" expand="full" fill="clear" class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Shop</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col> -->
+      <ion-col col>
+        <ion-button routerLink="/entertainment" block text-center color="danger" expand="full" fill="clear"
+          class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Entertainment</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <!-- <ion-col col>
+        <ion-button block text-center color="danger" expand="full" fill="clear" class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Housework</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col> -->
+      <!-- <ion-col col>
+        <ion-button block text-center color="danger" expand="full" fill="clear" class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Cinema</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col> -->
+      <ion-col col>
+        <ion-button routerLink="/walk" block text-center color="danger" expand="full" fill="clear"
+          class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Walk</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col>
+      <ion-col col>
+        <ion-button routerLink="/study" block text-center color="danger" expand="full" fill="clear"
+          class="glowing-border"
+          style="background: #363636 !important;width:100%;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Study</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <!-- <ion-row>
+      <ion-col col>
+        <ion-button block text-center color="danger" expand="full" fill="clear" class="glowing-border"
+          style="background: #363636 !important;width:auto;height: 120px;color: #FFF; border-right: 1px solid #4DB173;border-bottom: 1px solid #4DB173;">
+          <div>
+            <div>
+              <ion-icon name="analytics" style="font-size: 30px;color:#FFF;"></ion-icon>
+            </div>
+            <ion-label style="font-weight: bold;color:#FFF;">Housework</ion-label>
+            <p style="color: #4DB173;font-size: 10px;">View Details</p>
+          </div>
+        </ion-button>
+      </ion-col>
+    </ion-row> -->
+  </ion-grid>
+
+</ion-content>

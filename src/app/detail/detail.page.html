@@ -1,0 +1,37 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>Info Details</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div *ngFor="let message of messages">
+    <h4>{{message.date}}</h4>
+    <ion-card *ngFor="let item of message.info">
+        <ion-item>
+          <ion-avatar item-start >
+            <img src="assets/imgs/user-icon.png">
+          </ion-avatar>
+          <h2>{{item.address}}</h2>
+        </ion-item>
+      
+        <ion-card-content>
+          <p>{{item.body}}</p>
+          <p>{{item.date | date: 'H:mm'}}</p>
+        </ion-card-content>
+    </ion-card>
+  </div>
+
+  <!-- <ion-card>
+    <ion-card-content>
+      <ion-card-title>{{info.info_title}}</ion-card-title>
+
+      <p>{{info.info_description}}</p>
+    </ion-card-content>
+  </ion-card> -->
+
+</ion-content>

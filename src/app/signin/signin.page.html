@@ -1,0 +1,26 @@
+<ion-content color="dark" padding style="background: #000 !important;color:#FFF;">
+
+
+  <ion-list style="background: transparent !important;">
+    <ion-item text-center  no-lines class="glowing-border">
+      <img src="/assets/imgs/inoffice.jpg" />
+    </ion-item>
+    <ion-item no-lines class="glowing-border">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input placeholder="Enter Email"></ion-input>
+    </ion-item>
+
+    <ion-item no-lines class="glowing-border">
+      <ion-label position="floating">Password</ion-label>
+      <ion-input placeholder="Enter Email"></ion-input>
+    </ion-item>
+
+    <ion-button (click)="userHome()" expand="full" color="danger">Signin </ion-button>
+    <ion-button (click)="userSignUp()" expand="full" color="success">Signun </ion-button>
+    <ion-button (click)="forgotPassword()" expand="full" color="light">Forgot Password </ion-button>
+  </ion-list>
+
+</ion-content>
+<ion-footer text-center style="background: transparent !important; border: 1px solid #FFF;">
+  <p style="color: #000;">Copy Rights @ 2019</p>
+</ion-footer>

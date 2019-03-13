@@ -1,0 +1,70 @@
+.fab {
+  contain: none;
+  overflow: visible;
+}
+
+.sms-badge {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  border-radius: 100%;
+}
+.glowing-border {
+  border: 1px solid rgba(204, 204, 204, 0.603); /* some kind of blue border */
+
+  /* other CSS styles */
+
+  /* round the corners */
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+
+
+  /* make it glow! */
+  -webkit-box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.603);
+     -moz-box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.603);
+          box-shadow: 0px 0px 4px rgba(204, 204, 204, 0.603); /* some variation of blue for the shadow */
+
+}
+.swiper-pagination {
+  padding: 3px;
+  bottom:0px;
+  .swiper-pagination-bullet {
+      background: #FFF;
+      margin: 0 3px;
+  }
+}
+
+.toolbar-background {
+  background: #fff;
+  border-color: transparent;
+}
+
+.slide-zoom {
+  height: 100%;
+}
+
+.slide-title {
+  margin-top: 2.8rem;
+}
+
+.slide-image {
+  max-height: 50%;
+  max-width: 60%;
+  margin: 18px 0;
+}
+
+b {
+  font-weight: 500;
+}
+
+p {
+  padding: 0 40px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #60646B;
+
+  b {
+    color: #000000;
+  }
+}
